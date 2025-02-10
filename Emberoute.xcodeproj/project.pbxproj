@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		389E26352D5988AF00DED2A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 389E25592D5927C700DED2A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 389E25602D5927C700DED2A3;
+			remoteInfo = Emberoute;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		389E25612D5927C700DED2A3 /* Emberoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emberoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		389E26312D5988AF00DED2A3 /* EmberouteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmberouteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = Emberoute;
 			sourceTree = "<group>";
 		};
+		389E26322D5988AF00DED2A3 /* EmberouteTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EmberouteTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		389E255E2D5927C700DED2A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389E262E2D5988AF00DED2A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				389E25632D5927C700DED2A3 /* Emberoute */,
+				389E26322D5988AF00DED2A3 /* EmberouteTests */,
 				389E25622D5927C700DED2A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				389E25612D5927C700DED2A3 /* Emberoute.app */,
+				389E26312D5988AF00DED2A3 /* EmberouteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = 389E25612D5927C700DED2A3 /* Emberoute.app */;
 			productType = "com.apple.product-type.application";
 		};
+		389E26302D5988AF00DED2A3 /* EmberouteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 389E26392D5988AF00DED2A3 /* Build configuration list for PBXNativeTarget "EmberouteTests" */;
+			buildPhases = (
+				389E262D2D5988AF00DED2A3 /* Sources */,
+				389E262E2D5988AF00DED2A3 /* Frameworks */,
+				389E262F2D5988AF00DED2A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				389E26362D5988AF00DED2A3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				389E26322D5988AF00DED2A3 /* EmberouteTests */,
+			);
+			name = EmberouteTests;
+			packageProductDependencies = (
+			);
+			productName = EmberouteTests;
+			productReference = 389E26312D5988AF00DED2A3 /* EmberouteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					389E25602D5927C700DED2A3 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					389E26302D5988AF00DED2A3 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 389E25602D5927C700DED2A3;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				389E25602D5927C700DED2A3 /* Emberoute */,
+				389E26302D5988AF00DED2A3 /* EmberouteTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		389E255F2D5927C700DED2A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389E262F2D5988AF00DED2A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		389E262D2D5988AF00DED2A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		389E26362D5988AF00DED2A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 389E25602D5927C700DED2A3 /* Emberoute */;
+			targetProxy = 389E26352D5988AF00DED2A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		389E25752D5927C800DED2A3 /* Debug */ = {
@@ -311,6 +386,40 @@
 			};
 			name = Release;
 		};
+		389E26372D5988AF00DED2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodesnippets.EmberouteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emberoute.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Emberoute";
+			};
+			name = Debug;
+		};
+		389E26382D5988AF00DED2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodesnippets.EmberouteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emberoute.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Emberoute";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -328,6 +437,15 @@
 			buildConfigurations = (
 				389E25752D5927C800DED2A3 /* Debug */,
 				389E25762D5927C800DED2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		389E26392D5988AF00DED2A3 /* Build configuration list for PBXNativeTarget "EmberouteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				389E26372D5988AF00DED2A3 /* Debug */,
+				389E26382D5988AF00DED2A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
