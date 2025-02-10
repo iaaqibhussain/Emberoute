@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="958-fT-bqu">
+                                <rect key="frame" x="122.66666666666669" y="429" width="185" height="74.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emberoute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1B-Fl-MNP">
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="41"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="32"/>
+                                        <color key="textColor" name="ThemeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C17-Bx-fL8">
+                                        <rect key="frame" x="47.333333333333329" y="49.666666666666686" width="89.999999999999986" height="24.666666666666671"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4qE-zW-LJj">
+                                                <rect key="frame" x="0.0" y="-2.6666666666666679" width="30" height="30.000000000000004"/>
+                                                <color key="tintColor" name="BaseThemeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24.666666666666629" id="YGw-Tp-bTg"/>
+                                                    <constraint firstAttribute="width" constant="30" id="rWJ-qZ-DXn"/>
+                                                </constraints>
+                                                <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjY-BU-lGF">
+                                                <rect key="frame" x="30" y="-2.6666666666666679" width="30" height="30.000000000000004"/>
+                                                <color key="tintColor" name="SecondaryThemeColor"/>
+                                                <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lcN-p3-xFz">
+                                                <rect key="frame" x="60" y="-2.6666666666666679" width="30" height="30.000000000000004"/>
+                                                <color key="tintColor" name="ThemeColor"/>
+                                                <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="IjY-BU-lGF" firstAttribute="width" secondItem="4qE-zW-LJj" secondAttribute="width" id="DQw-UO-aol"/>
+                                            <constraint firstItem="IjY-BU-lGF" firstAttribute="height" secondItem="4qE-zW-LJj" secondAttribute="height" id="L23-zs-MPp"/>
+                                            <constraint firstItem="lcN-p3-xFz" firstAttribute="height" secondItem="4qE-zW-LJj" secondAttribute="height" id="ecf-Lt-tYT"/>
+                                            <constraint firstItem="lcN-p3-xFz" firstAttribute="width" secondItem="4qE-zW-LJj" secondAttribute="width" id="sDB-4E-yMq"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="958-fT-bqu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bad-dl-nUn"/>
+                            <constraint firstItem="958-fT-bqu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bgd-cO-8G1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.232558139534881" y="427.46781115879833"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="BaseThemeColor">
+            <color red="0.77647058823529413" green="0.85490196078431369" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryThemeColor">
+            <color red="0.54117647058823526" green="0.70980392156862748" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeColor">
+            <color red="0.27058823529411763" green="0.50588235294117645" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
