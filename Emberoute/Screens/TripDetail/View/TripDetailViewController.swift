@@ -39,15 +39,7 @@ final class TripDetailViewController: UIViewController {
     }
     
     @IBAction func didTapSeeRoute(_ sender: UIButton) {
-        let viewController: TripRouteListViewController? = .instantiate { [weak self] coder in
-            guard let self else { return nil }
-            return TripRouteListViewController(
-                coder: coder,
-                viewModel: TripRouteListViewModelImpl(tripUID: viewModel.tripUID)
-            )
-        }
-        guard let viewController = viewController else { return }
-        navigationController?.pushViewController(viewController, animated: true)
+        navigateToRouteList()
     }
 }
 
@@ -112,5 +104,17 @@ private extension TripDetailViewController {
 
         let edgePadding = UIEdgeInsets(top: 50, left: 50, bottom: 50, right: 50)
         mapView.setVisibleMapRect(mapRect, edgePadding: edgePadding, animated: true)
+    }
+    
+    func navigateToRouteList() {
+        let viewController: TripRouteListViewController? = .instantiate { [weak self] coder in
+            guard let self else { return nil }
+            return TripRouteListViewController(
+                coder: coder,
+                viewModel: TripRouteListViewModelImpl(tripUID: viewModel.tripUID)
+            )
+        }
+        guard let viewController = viewController else { return }
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

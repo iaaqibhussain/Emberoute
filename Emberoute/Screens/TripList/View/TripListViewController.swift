@@ -33,13 +33,7 @@ final class TripListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let item = viewModel.itemFor(rowAt: indexPath.item)
-        let viewController = TripDetailViewController.instantiate { coder in
-            TripDetailViewController(
-                coder: coder,
-                viewModel: TripDetailViewModelImpl(input: item.detail)
-            )
-        }
-        navigationController?.pushViewController(viewController, animated: true)
+        navigateToDetails(item)
     }
 }
 
@@ -68,5 +62,15 @@ private extension TripListViewController {
                 showSnackBar(with: message, state: state)
             }
         }
+    }
+    
+    func navigateToDetails(_ item: TripListViewData) {
+        let viewController = TripDetailViewController.instantiate { coder in
+            TripDetailViewController(
+                coder: coder,
+                viewModel: TripDetailViewModelImpl(input: item.detail)
+            )
+        }
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
